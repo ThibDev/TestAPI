@@ -30,3 +30,17 @@ function createHtml(reddit) {
   grid.innerHTML = html;
 }
 
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(users =>{
+      return users.json();
+})
+.then(users =>{
+      users.forEach(users => {
+      const li = document.createElement("li");
+      li.textContent = users.username;
+      const li2 = document.createElement("li");
+      li2.textContent = users.website;
+      document.getElementById("liste").appendChild(li);
+      document.getElementById("liste2").appendChild(li2); 
+      });
+})
