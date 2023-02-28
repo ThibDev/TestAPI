@@ -40,7 +40,10 @@ fetch("https://jsonplaceholder.typicode.com/users")
       li.textContent = users.username;
       const li2 = document.createElement("li");
       li2.textContent = users.website;
+      const li3 = document.createElement("li");
+      li3.textContent = users.email;
       document.getElementById("liste").appendChild(li);
-      document.getElementById("liste2").appendChild(li2); 
+      document.getElementById("liste").appendChild(li2);
+      document.getElementById("liste").appendChild(li3);  
       });
 })
