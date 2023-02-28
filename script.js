@@ -44,6 +44,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
       li3.textContent = users.email;
       document.getElementById("liste").appendChild(li);
       document.getElementById("liste").appendChild(li2);
-      document.getElementById("liste").appendChild(li3);  
+      document.getElementById("liste").appendChild(li3);
+      li3.style.marginBottom = "20px"; 
       });
 })
